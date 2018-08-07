@@ -11,6 +11,8 @@
     default: 8080
     required: true
   - variable: "prefix"
+    type: "string"
+    label: "Path prefix"
     description: "Which path prefix should Jenkins base its URLs on?"
     required: true
     default: "/"

@@ -8,7 +8,7 @@ jenkins-primary:
   volumes_from:
     - jenkins-plugins
     - jenkins-datavolume
-  env:
+  environment:
     JENKINS_OPTS: "--prefix=${prefix}"
   entrypoint: /usr/share/jenkins/rancher/jenkins.sh
 jenkins-plugins:
