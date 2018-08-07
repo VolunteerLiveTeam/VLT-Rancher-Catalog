@@ -1,5 +1,5 @@
-name: Jenkins
+name: (VLT Fork) Jenkins
 description: |
   Jenkins CI server (LTS)
-version: 2.92-rancher1
+version: "2.136"
 category: Continuous Integration
