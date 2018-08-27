@@ -2,6 +2,7 @@ version: '2'
 catalog:
   name: Drone
   version: "0.8.7-rancher.1"
+  upgrade_from: "0.8.7"
   description: |
     Drone CI
   questions:
