@@ -34,12 +34,12 @@ catalog:
     label: "GitHub Client ID"
     description: "Enter your OAuth client ID"
   - variable: "DRONE_GITHUB_SECRET"
-    type: "password"
+    type: "multiline"
     required: true
     label: "GitHub Client Secret"
     description: "Enter your OAuth client secret"
   - variable: "DRONE_SECRET"
-    type: "multiline"
+    type: "password"
     required: true
     label: "Drone Shared Secret"
   - variable: "DRONE_REGISTRATION_OPEN"
