@@ -11,6 +11,12 @@ catalog:
     description: "Which port should Drone listen on?"
     default: 8080
     required: true
+  - variable: "DRONE_AGENT_PORT"
+    type: "int"
+    label: "Agent Port Number"
+    description: "Which port should Drone use to communicate with agents?"
+    default: 5000
+    required: true
   - variable: "HOST"
     type: "string"
     required: true
@@ -33,7 +39,7 @@ catalog:
     label: "GitHub Client Secret"
     description: "Enter your OAuth client secret"
   - variable: "DRONE_SECRET"
-    type: "password"
+    type: "multiline"
     required: true
     label: "Drone Shared Secret"
   - variable: "DRONE_REGISTRATION_OPEN"
