@@ -1,0 +1,60 @@
+version: '2'
+catalog:
+  name: Drone
+  version: "0.8.7-rancher.1"
+  description: |
+    Drone CI
+  questions:
+  - variable: "PORT"
+    type: "int"
+    label: "Port Number"
+    description: "Which port should Drone listen on?"
+    default: 8080
+    required: true
+  - variable: "DRONE_AGENT_PORT"
+    type: "int"
+    label: "Agent Port Number"
+    description: "Which port should Drone use to communicate with agents?"
+    default: 5000
+    required: true
+  - variable: "HOST"
+    type: "string"
+    required: true
+    label: "Host"
+    description: "What host will Drone be installed on?"
+  - variable: "DRONE_VOLUME_PATH"
+    type: "string"
+    required: true
+    label: "Volume Path"
+    description: "What path (on the host) should Drone's database be stored?"
+    default: "/var/lib/drone"
+  - variable: "DRONE_GITHUB_CLIENT"
+    type: "string"
+    required: true
+    label: "GitHub Client ID"
+    description: "Enter your OAuth client ID"
+  - variable: "DRONE_GITHUB_SECRET"
+    type: "multiline"
+    required: true
+    label: "GitHub Client Secret"
+    description: "Enter your OAuth client secret"
+  - variable: "DRONE_SECRET"
+    type: "password"
+    required: true
+    label: "Drone Shared Secret"
+  - variable: "DRONE_REGISTRATION_OPEN"
+    type: "boolean"
+    default: true
+    label: "Registration Open"
+    description: "Whether members of GitHub orgs can create an account"
+  - variable: "DRONE_GITHUB_ORGS"
+    type: "string"
+    required: true
+    label: "GitHub Organisations"
+    description: "Users from these orgs can create an account on Drone. Separate with commas."
+  - variable: "DRONE_GITHUB_ADMINS"
+    type: "string"
+    required: true
+    label: "GitHub Admins"
+    description: "These GitHub users are admins on Drone. Separate with commas."
+
