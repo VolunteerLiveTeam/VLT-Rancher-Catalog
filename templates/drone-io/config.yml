@@ -1,0 +1,5 @@
+name: (VLT) Drone.io
+description: |
+  Drone CI server
+version: "0.8.6"
+category: Continuous Integration
